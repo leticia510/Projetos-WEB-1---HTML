@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>CADASTRO DE USUÁRIO</title>
+    </head>
+
+    <body>
+        <h1>Formulário de Inscrição para a Academia Ninja</h1>
+        <nav>
+            <ul> 
+                <li><a href="#PaginaPrincipal">Página Principal</a></li> 
+                <li><a href="#sobreMim">Sobre Mim</a></li>
+                <li><a href="#Habilidades">Habilidades</a></li> 
+                <li><a href="#contato">Contato</a></li>
+            </ul> 
+        </nav>
+
+        <section id="PaginaPrincipal">
+            <h3>Formulário de Cadastro</h3>
+            <form action="#" method="post">
+                <label for="nome">Nome:</label>
+                <input type="text" id="nome" name="nome" required><br><br>
+                
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required><br><br>
+
+                <label for="password">Senha:</label>
+                <input type="password" id="password" name="password" required><br><br>
+
+                <label for="genero">Gênero:</label> 
+                <select id="genero" name="genero" required>
+                    <option value="masculino">Masculino</option> 
+                    <option value="feminino">Feminino</option>
+                </select><br><br>
+
+                <h3>Interesses:</h3>
+                <label><input type="checkbox" name="habilidades[]" value="Informática"> Informática</label><br><br> 
+                <label><input type="checkbox" name="habilidades[]" value="Designer"> Designer</label><br><br> 
+                <label><input type="checkbox" name="habilidades[]" value="Química"> Química</label><br><br> 
+
+                <label for="biografia">Biografia:</label><br><br> 
+                <textarea id="biografia" name="biografia" rows="5" cols="50"></textarea><br><br> 
+
+                <input type="submit" value="Enviar">
+            </form>
+        </section>
+    </body>
+</html>
